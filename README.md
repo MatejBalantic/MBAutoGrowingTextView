@@ -14,7 +14,8 @@ Auto layout is a great way to design your interfaces in a modern iOS application
 * Maximal and minimal height of the UITextView can be definde from the interface builder
 * When maximal height is reached, UITextView content becomes scrollable
 * **Not a single line of code required** for complete functionality
- 
+![Animated demo](https://raw.githubusercontent.com/MatejBalantic/MBDocs/master/MBAutoGrowingTextView/animated.gif)
+
 
 ## Installation
 Installation should be done via Cocoa Pods. 
