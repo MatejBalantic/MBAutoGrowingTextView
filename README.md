@@ -3,7 +3,7 @@ MBAutoGrowingTextView
 
 An auto-layout based light-weight UITextView subclass which automatically grows and shrinks based on the size of user input and can be constrained by maximal and minimal height - all without a single line of code.
 
-Made primarely for use in Interface builder and only works with Auto layout.
+Made primarily for use in Interface builder and only works with Auto layout.
 
 ## Quick background
 Auto layout is a great way to design your interfaces in a modern iOS application. Certain functionality, however, sometimes can't be achived out-of-the-box. One such example is auto-growing/shrinking UITextView. The problem of this view is that is by default a scrollable view, which means that it's intristic size would not change based on the content. On way around it would be to simply make it unscrollable, however this prevents user to scroll up and down when such element reaches it's maximal height. Thus, MBAutoGrowingTextView was created to work around this problem.
@@ -11,7 +11,7 @@ Auto layout is a great way to design your interfaces in a modern iOS application
 ## Functionality
 * Made for iOS 7, fully leveraging Interface builder and Auto layout.
 * UITextView's height will automatically grow or shrink based on amount of text entered by user
-* Maximal and minimal height of the UITextView can be definde from the interface builder
+* Maximal and minimal height of the UITextView can be defined from the interface builder
 * When maximal height is reached, UITextView content becomes scrollable
 * **Not a single line of code required** for complete functionality
 
