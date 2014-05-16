@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   s.author             = { "Matej Balantič" => "matej@balantic.si" }
   s.social_media_url = "http://twitter.com/skavt"
-  s.platform     = :ios
+  s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/MatejBalantic/MBAutoGrowingTextView.git", :tag => "0.1.0" }
   s.source_files  = 'MBAutoGrowingTextView/*.{h,m}'
   s.requires_arc = true
