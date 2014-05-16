@@ -11,7 +11,7 @@ Auto layout is a great way to design your interfaces in a modern iOS application
 ## Functionality
 * Made for iOS 7, fully leveraging Interface builder and Auto layout.
 * UITextView's height will automatically grow or shrink based on amount of text entered by user
-* Maximal and minimal height of the UITextView can be definde from the interface builder
+* Maximal and minimal height of the UITextView can be defined from the interface builder
 * When maximal height is reached, UITextView content becomes scrollable
 * **Not a single line of code required** for complete functionality
 
