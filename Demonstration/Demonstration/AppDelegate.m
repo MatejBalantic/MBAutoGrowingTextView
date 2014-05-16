@@ -1,14 +1,14 @@
 //
-//  MBAppDelegate.m
-//  MBAutoGrowingTextView
+//  AppDelegate.m
+//  Demonstration
 //
 //  Created by Matej Balantic on 16/05/14.
 //  Copyright (c) 2014 Matej Balantič. All rights reserved.
 //
 
-#import "MBAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation MBAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

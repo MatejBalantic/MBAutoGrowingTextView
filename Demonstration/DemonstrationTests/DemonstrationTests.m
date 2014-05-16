@@ -1,18 +1,18 @@
 //
-//  MBAutoGrowingTextViewTests.m
-//  MBAutoGrowingTextViewTests
+//  DemonstrationTests.m
+//  DemonstrationTests
 //
 //  Created by Matej Balantic on 16/05/14.
-//  Copyright (c) 2014 si.balantic. All rights reserved.
+//  Copyright (c) 2014 Matej Balantič. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface MBAutoGrowingTextViewTests : XCTestCase
+@interface DemonstrationTests : XCTestCase
 
 @end
 
-@implementation MBAutoGrowingTextViewTests
+@implementation DemonstrationTests
 
 - (void)setUp
 {

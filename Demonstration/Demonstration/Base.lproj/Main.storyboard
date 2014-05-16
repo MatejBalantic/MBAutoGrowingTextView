@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="MBViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,13 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZe-ui-4ue" customClass="MBAutoGrowingTextView">
-                                <rect key="frame" x="0.0" y="322" width="320" height="31"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-Lq-C3e" customClass="MBAutoGrowingTextView">
+                                <rect key="frame" x="0.0" y="320" width="320" height="33"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="OyY-HR-dAJ"/>
-                                    <constraint firstAttribute="height" constant="31" id="tAh-m2-0j6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="Iam-t9-kG5"/>
+                                    <constraint firstAttribute="height" constant="33" id="mwt-SQ-65J"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="oFS-2u-mZd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -30,13 +31,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oZe-ui-4ue" secondAttribute="bottom" constant="215" id="7Kq-q3-Am5"/>
-                            <constraint firstAttribute="trailing" secondItem="oZe-ui-4ue" secondAttribute="trailing" id="MyP-kr-9cM"/>
-                            <constraint firstItem="oZe-ui-4ue" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Ytv-G6-7l8"/>
+                            <constraint firstItem="bgH-Lq-C3e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7qp-i7-Bfw"/>
+                            <constraint firstAttribute="trailing" secondItem="bgH-Lq-C3e" secondAttribute="trailing" id="Se8-q5-cAj"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bgH-Lq-C3e" secondAttribute="bottom" constant="215" id="sDF-Np-8HF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="oZe-ui-4ue" id="37b-my-6RZ"/>
+                        <outlet property="textView" destination="bgH-Lq-C3e" id="lyp-YI-4VI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

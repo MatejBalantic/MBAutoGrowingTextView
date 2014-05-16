@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>474F4A7F-A9A3-490D-8D80-E2F35BAE216E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Demonstration</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7FD10E1C-ABBD-4530-99CF-0BBEF76F1925</key>
+		<string>https://github.com/MatejBalantic/MBAutoGrowingTextView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Demonstration/Demonstration.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7FD10E1C-ABBD-4530-99CF-0BBEF76F1925</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MatejBalantic/MBAutoGrowingTextView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7FD10E1C-ABBD-4530-99CF-0BBEF76F1925</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7FD10E1C-ABBD-4530-99CF-0BBEF76F1925</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MBAutoGrowingTextView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

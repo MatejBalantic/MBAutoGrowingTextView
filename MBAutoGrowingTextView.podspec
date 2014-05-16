@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "MBAutoGrowingTextView"
   s.version      = "0.1.0"
-  s.summary      = "An auto-layout based light-weight UITextView subclass which automatically grows and shrinks based on the size of user input and can be constrained by maximal and minimal height - all without a single line of code."
+  s.summary      = "An auto-layout based light-weight UITextView subclass which automatically grows and shrinks based on the size of user input"
 
   s.description  = <<-DESC
 		An auto-layout based light-weight UITextView subclass which automatically grows and shrinks based on the size of 
@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/MatejBalantic/MBLocationManager.git", :tag => "0.1.0" }
   s.source_files  = 'Classes', 'MBAutoGrowingTextView/MBAutoGrowingTextView.{h,m}'
+  s.requires_arc = true
 end
