@@ -3,27 +3,26 @@
 //  MBAutoGrowingTextView
 //
 //  Created by Matej Balantic on 16/05/14.
-//  Copyright (c) 2014 si.balantic. All rights reserved.
+//  Copyright (c) 2014 Matej Balantič. All rights reserved.
 //
 
 #import "MBViewController.h"
+#import "MBAutoGrowingTextView.h"
 
 @interface MBViewController ()
-
+@property (nonatomic, weak) IBOutlet MBAutoGrowingTextView *textView;
 @end
 
 @implementation MBViewController
 
-- (void)viewDidLoad
+-(void)viewDidLoad
 {
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // Open a keyboard immediately. This is placed here to simplify and focus the demo
+    // Not needed in your own implementation
+    [self.textView becomeFirstResponder];
 }
 
 @end

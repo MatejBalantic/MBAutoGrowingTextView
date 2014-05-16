@@ -21,6 +21,7 @@
 		9EDC5C69192608D80092D938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDC5C4B192608D80092D938 /* UIKit.framework */; };
 		9EDC5C71192608D80092D938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC5C6F192608D80092D938 /* InfoPlist.strings */; };
 		9EDC5C73192608D80092D938 /* MBAutoGrowingTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC5C72192608D80092D938 /* MBAutoGrowingTextViewTests.m */; };
+		9EDC5C7E192609A40092D938 /* MBAutoGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC5C7D192609A40092D938 /* MBAutoGrowingTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9EDC5C6E192608D80092D938 /* MBAutoGrowingTextViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBAutoGrowingTextViewTests-Info.plist"; sourceTree = "<group>"; };
 		9EDC5C70192608D80092D938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9EDC5C72192608D80092D938 /* MBAutoGrowingTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAutoGrowingTextViewTests.m; sourceTree = "<group>"; };
+		9EDC5C7C192609A40092D938 /* MBAutoGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAutoGrowingTextView.h; sourceTree = "<group>"; };
+		9EDC5C7D192609A40092D938 /* MBAutoGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAutoGrowingTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		9EDC5C4D192608D80092D938 /* MBAutoGrowingTextView */ = {
 			isa = PBXGroup;
 			children = (
+				9EDC5C7F192609A90092D938 /* Classes */,
 				9EDC5C56192608D80092D938 /* MBAppDelegate.h */,
 				9EDC5C57192608D80092D938 /* MBAppDelegate.m */,
 				9EDC5C59192608D80092D938 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				9EDC5C6F192608D80092D938 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EDC5C7F192609A90092D938 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC5C7C192609A40092D938 /* MBAutoGrowingTextView.h */,
+				9EDC5C7D192609A40092D938 /* MBAutoGrowingTextView.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				9EDC5C54192608D80092D938 /* main.m in Sources */,
 				9EDC5C5E192608D80092D938 /* MBViewController.m in Sources */,
 				9EDC5C58192608D80092D938 /* MBAppDelegate.m in Sources */,
+				9EDC5C7E192609A40092D938 /* MBAutoGrowingTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
