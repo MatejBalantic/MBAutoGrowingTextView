@@ -71,8 +71,14 @@
              a view with valid auto-layout constraints.");
     
     // calculate size needed for the text to be visible without scrolling
-    CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
-    float newHeight = sizeThatFits.height;
+    CGFloat newHeight;
+    BOOL iOS7 = kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber_iOS_6_1;
+    if (iOS7) {
+        CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
+        newHeight = sizeThatFits.height;
+    } else {
+        newHeight = self.contentSize.height;
+    }
 
     // if there is any minimal height constraint set, make sure we consider that
     if (self.maxHeightConstraint) {
