@@ -71,8 +71,7 @@
              a view with valid auto-layout constraints.");
     
     // calculate size needed for the text to be visible without scrolling
-    CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
-    float newHeight = sizeThatFits.height;
+    float newHeight = self.intrinsicContentSize.height;
 
     // if there is any minimal height constraint set, make sure we consider that
     if (self.maxHeightConstraint) {
