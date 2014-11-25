@@ -88,5 +88,17 @@
     self.heightConstraint.constant = newHeight;
 }
 
+// update intrinsic size
+- (CGSize)intrinsicContentSize {
+
+    // height should be text view content size
+    CGSize intrinsicContentSize = self.contentSize;
+
+    // increment size by textContainerInset
+    intrinsicContentSize.width += (self.textContainerInset.left + self.textContainerInset.right) / 2.0f;
+    intrinsicContentSize.height += (self.textContainerInset.top + self.textContainerInset.bottom) / 2.0f;
+
+    return intrinsicContentSize;
+}
 
 @end
