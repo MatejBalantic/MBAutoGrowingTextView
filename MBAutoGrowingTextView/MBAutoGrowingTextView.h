@@ -17,5 +17,22 @@
  
  Usage: subclass desired UITextView in IB and assign min-height and max-height constraints
  */
+
+@protocol MBAutoGrowingTextViewDelegate;
+
 @interface MBAutoGrowingTextView : UITextView
+
+@property (nonatomic, assign) id<MBAutoGrowingTextViewDelegate> autoGrowingTextViewDelegate;
+
+- (void)setHeight:(CGFloat)height;
+- (void)setMinHeight:(CGFloat)minHeight;
+- (void)setMaxHeight:(CGFloat)maxHeight;
+
+@end
+
+@protocol MBAutoGrowingTextViewDelegate <NSObject>
+
+@required
+- (void)textView:(MBAutoGrowingTextView *)textView didChangeSize:(CGSize)newSize;
+
 @end
