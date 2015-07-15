@@ -58,7 +58,7 @@
             }
         }
     }
-
+    
 }
 
 - (void) layoutSubviews
@@ -71,14 +71,14 @@
              a view with valid auto-layout constraints.");
     
     // calculate size needed for the text to be visible without scrolling
-    CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
+    CGSize sizeThatFits = self.intrinsicContentSize;
     float newHeight = sizeThatFits.height;
-
+    
     // if there is any minimal height constraint set, make sure we consider that
     if (self.maxHeightConstraint) {
         newHeight = MIN(newHeight, self.maxHeightConstraint.constant);
     }
-
+    
     // if there is any maximal height constraint set, make sure we consider that
     if (self.minHeightConstraint) {
         newHeight = MAX(newHeight, self.minHeightConstraint.constant);
@@ -88,5 +88,15 @@
     self.heightConstraint.constant = newHeight;
 }
 
+- (CGSize)intrinsicContentSize
+{
+    CGSize size = self.contentSize;
+    
+    if ([self respondsToSelector:@selector(textContainerInset)]) {
+        size.height += (self.textContainerInset.top + self.textContainerInset.bottom) / 2.0f;
+    }
+    
+    return size;
+}
 
 @end
