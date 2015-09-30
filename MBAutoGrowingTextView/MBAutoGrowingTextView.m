@@ -84,8 +84,26 @@
         newHeight = MAX(newHeight, self.minHeightConstraint.constant);
     }
     
-    // update the height constraint
-    self.heightConstraint.constant = newHeight;
+    if (self.heightConstraint.constant != newHeight){
+        // update the height constraint
+        self.heightConstraint.constant = newHeight;
+        [self scrollRectToVisible:CGRectMake(0, newHeight-1, 1, 1) animated:NO];
+    }
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    
+    CGSize boundingSize = CGSizeMake(size.width - self.contentInset.left - self.contentInset.right - 2 *self.textContainer.lineFragmentPadding, MAXFLOAT);
+    
+    CGRect newSize = [self.text boundingRectWithSize:boundingSize options:NSStringDrawingUsesLineFragmentOrigin attributes:nil context:nil];
+    
+    if (self.attributedText != nil) {
+        newSize = [self.attributedText boundingRectWithSize:boundingSize options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+    }
+    
+    newSize.size = CGSizeMake(newSize.size.width, newSize.size.height + self.contentInset.top + self.contentInset.bottom +2 *self.textContainer.lineFragmentPadding);
+    
+    return CGRectIntegral(newSize).size;
 }
 
 
