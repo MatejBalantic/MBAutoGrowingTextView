@@ -16,18 +16,6 @@
 
 @implementation MBAutoGrowingTextView
 
-
--(id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    
-    if (self) {
-        [self associateConstraints];
-    }
-    
-    return self;
-}
-
 -(id) initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -35,6 +23,18 @@
         [self associateConstraints];
     }
     return self;
+}
+
+- (void)addConstraint:(NSLayoutConstraint *)constraint
+{
+    [super addConstraint:constraint];
+    [self associateConstraints];
+}
+
+- (void)addConstraints:(NSArray<__kindof NSLayoutConstraint *> *)constraints
+{
+    [super addConstraints:constraints];
+    [self associateConstraints];
 }
 
 -(void)associateConstraints
