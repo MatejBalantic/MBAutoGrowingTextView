@@ -19,7 +19,7 @@ Auto layout is a great way to design your interfaces in a modern iOS application
 
 
 ## Installation
-Installation should be done via Cocoa Pods. 
+Installation should be done via CocoaPods. 
 
 Install CocoaPods if you didn't yet:
 ```bash
