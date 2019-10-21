@@ -1,3 +1,7 @@
+Deprecated
+=====================
+This library is no longer maintained and is deprecated. The repository might be removed at any point in the future.
+
 MBAutoGrowingTextView
 =====================
 
